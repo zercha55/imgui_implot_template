@@ -156,12 +156,7 @@ int main(int, char**)
         // 4. Show another window with implot plots
         if(show_implot_window)
         {
-            int bar_data[2] = {1,2};
-            ImGui::Begin("My Implot Window");
-            ImPlot::BeginPlot("My Plot");
-            ImPlot::PlotBars("My Bar Plot", bar_data, 2);
-            ImPlot::EndPlot();
-            ImGui::End();
+            ImPlot::ShowDemoWindow();
         }
 
         // Rendering
